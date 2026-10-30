@@ -1,0 +1,24 @@
+{
+  "_说明": "OpenAIR 实测空间 IR。makeup_db 是用粉噪实测的卷积补偿增益（afir=dry=1:wet=10 时），换 IR 或换 ffmpeg 版本须重测。wet 是建议湿度起点。",
+  "_来源": "OpenAIR / University of York — https://www.openairlib.net/ — CC BY 4.0",
+  "format": { "sample_rate": 48000, "channels": 2, "codec": "pcm_f32le", "max_seconds": 10 },
+  "irs": [
+    { "id": "cathedral-big",    "scene": "大教堂",     "file": "york-minster.wav",                        "makeup_db": 20.4, "seconds": 10.0, "wet": 0.35 },
+    { "id": "cathedral-dome",   "scene": "穹顶大教堂", "file": "st-pauls-cathedral.wav",                  "makeup_db": 21.8, "seconds": 10.0, "wet": 0.35 },
+    { "id": "church-small",     "scene": "小教堂",     "file": "holy-trinity-church.wav",                 "makeup_db": 14.9, "seconds": 5.0,  "wet": 0.30 },
+    { "id": "hall",             "scene": "礼堂大厅",   "file": "central-hall-university-york.wav",         "makeup_db": 11.7, "seconds": 2.5,  "wet": 0.30 },
+    { "id": "concert-hall",     "scene": "音乐厅",     "file": "jack-lyons-concert-hall-university-york.wav","makeup_db": 12.6, "seconds": 4.0,  "wet": 0.28 },
+    { "id": "concert-hall-big", "scene": "大音乐厅",   "file": "usina-del-arte-symphony-hall.wav",         "makeup_db": 18.1, "seconds": 1.8,  "wet": 0.30 },
+    { "id": "theatre-small",    "scene": "小剧场",     "file": "dixon-studio-theatre-university-york.wav", "makeup_db": 12.9, "seconds": 3.0,  "wet": 0.25 },
+    { "id": "gym",              "scene": "体育馆",     "file": "sports-centre-university-york.wav",        "makeup_db": 20.6, "seconds": 9.8,  "wet": 0.35 },
+    { "id": "tunnel",           "scene": "隧道",       "file": "innocent-railway-tunnel.wav",              "makeup_db": 13.8, "seconds": 5.0,  "wet": 0.40 },
+    { "id": "mine",             "scene": "矿洞",       "file": "gill-heads-mine.wav",                      "makeup_db": 10.4, "seconds": 5.0,  "wet": 0.35 },
+    { "id": "stone-dungeon",    "scene": "石室地牢",   "file": "falkland-palace-bottle-dungeon.wav",       "makeup_db": 13.4, "seconds": 3.0,  "wet": 0.45 },
+    { "id": "tomb",             "scene": "史前墓室",   "file": "maes-howe.wav",                            "makeup_db": 9.8,  "seconds": 1.0,  "wet": 0.40 },
+    { "id": "tomb-passage",     "scene": "石墓甬道",   "file": "newgrange.wav",                            "makeup_db": 10.9, "seconds": 5.0,  "wet": 0.40 },
+    { "id": "mausoleum",        "scene": "陵墓",       "file": "hamilton-mausoleum.wav",                   "makeup_db": 22.4, "seconds": 10.0, "wet": 0.40 },
+    { "id": "warehouse",        "scene": "厂房仓库",   "file": "terrys-factory-warehouse.wav",             "makeup_db": 23.0, "seconds": 10.0, "wet": 0.35 },
+    { "id": "industrial-huge",  "scene": "巨型工业空间", "file": "r1-nuclear-reactor-hall.wav",             "makeup_db": 19.1, "seconds": 10.0, "wet": 0.40 },
+    { "id": "outdoor-open",     "scene": "空旷户外",   "file": "koli-national-park-summer.wav",            "makeup_db": 7.3,  "seconds": 5.0,  "wet": 0.22 }
+  ]
+}

@@ -1,0 +1,20 @@
+# RunningHub credentials and runtime cache
+RUNNINGHUB_API_KEY
+.cache/
+
+# Generated voice and audio-processing output
+voice-out/
+fx-out/
+*.tmp.wav
+*_voice.log.jsonl
+
+# General development artifacts
+node_modules/
+*.log
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+*.wav
+*.mp3
